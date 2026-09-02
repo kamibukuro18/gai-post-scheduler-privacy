@@ -1,4 +1,25 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GAI Post Scheduler</title>
-<style>:root{--ink:#24201d;--paper:#fffdf8;--accent:#8a4f37}*{box-sizing:border-box}body{margin:0;background:#f4efe7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}main{width:min(760px,calc(100% - 32px));margin:48px auto;padding:48px;background:var(--paper);border-radius:18px;box-shadow:0 12px 40px #37271d14}h1{margin-top:0;font-size:clamp(2rem,6vw,3.2rem);line-height:1.15}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em}a{color:var(--accent)}nav{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2rem}@media(max-width:600px){main{margin:0;width:100%;padding:32px 20px;border-radius:0}}</style></head>
-<body><main><p class="eyebrow">GAI｜細密画・ペン画｜Fine Line Artist</p><h1>GAI Post Scheduler</h1><p>セルフホストしたPostizを利用し、GAI自身のTikTok、Instagram、Pinterestアカウントへ作品や制作情報を作成・予約投稿するための個人用投稿管理アプリです。</p><p>各SNSの公式認証を通じてアカウントを接続し、投稿の作成、予約、公開状況の確認を一か所で行います。</p><nav><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="https://lit.link/gaibako">公式リンク</a></nav></main></body></html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GAI Post Schedulerは、作品を複数のSNSへ安全に予約投稿するための個人用セルフホストアプリです。">
+  <title>GAI Post Scheduler｜作品投稿管理</title>
+  <style>
+    :root{--ink:#24201d;--muted:#6f665f;--paper:#fffdf8;--bg:#f4efe7;--accent:#8a4f37;--line:#e6dcd0}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+    .wrap{width:min(980px,calc(100% - 32px));margin:0 auto}.hero{padding:64px 0 42px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;font-size:.9rem}h1{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.1;margin:.35rem 0 1rem;letter-spacing:-.03em}h2{font-size:1.45rem;line-height:1.3;margin:0 0 1rem}p{margin:.5rem 0 1rem}.lead{font-size:1.15rem;max-width:760px}.badge{display:inline-block;margin-top:1rem;padding:.35rem .75rem;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.85rem;background:#ffffff88}
+    .panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px;margin:18px 0;box-shadow:0 10px 30px #37271d0b}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border-top:3px solid var(--accent);padding:18px 0 4px}.card h3{margin:0 0 .35rem;font-size:1.05rem}.card p{color:var(--muted);font-size:.95rem}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:step}.step{position:relative;padding:18px 14px;background:#fff;border-radius:12px;border:1px solid var(--line)}.step:before{counter-increment:step;content:counter(step);display:block;color:var(--accent);font-weight:800;font-size:1.5rem;line-height:1;margin-bottom:10px}.step strong{display:block}.step span{display:block;color:var(--muted);font-size:.9rem;margin-top:5px}ul{padding-left:1.2rem}li{margin:.35rem 0}.links{display:flex;gap:1rem;flex-wrap:wrap}.links a{color:var(--accent);font-weight:600}.support{color:var(--muted)}footer{padding:14px 0 52px;color:var(--muted);font-size:.9rem}
+    @media(max-width:700px){.hero{padding:42px 0 26px}.panel{padding:22px}.grid,.flow{grid-template-columns:1fr 1fr}}@media(max-width:460px){.wrap{width:min(100% - 24px,980px)}.grid,.flow{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="hero wrap"><div class="eyebrow">GAI｜細密画・ペン画｜Fine Line Artist</div><h1>GAI Post Scheduler</h1><p class="lead">作品の制作情報と完成作品を、GAI本人が管理するSNSアカウントへ安全に予約投稿するためのセルフホスト型ダッシュボードです。</p><span class="badge">個人利用｜公開サービスではありません</span></header>
+  <main class="wrap">
+    <section class="panel"><h2>このアプリについて</h2><p>GAI Post Schedulerは、Postizを基盤にした個人用の投稿管理アプリです。Instagram、TikTok、Pinterest、YouTubeなどの公式認証を使って、自分のアカウントを接続します。投稿本文、画像・動画、公開日時を一か所で準備し、予約した時刻に各SNSの公式APIへ送信します。</p><p>利用者は作品制作者本人（GAI）のみです。第三者へのアカウント提供、広告配信、フォロワー情報の収集や販売は行っていません。</p></section>
+    <section class="panel"><h2>利用フロー</h2><div class="flow"><div class="step"><strong>公式ログイン</strong><span>SNSの認証画面で本人のアカウントを許可します。</span></div><div class="step"><strong>投稿を準備</strong><span>作品、説明文、ハッシュタグ、公開先を選びます。</span></div><div class="step"><strong>日時を予約</strong><span>公開日時とタイムゾーン（日本）を確認して保存します。</span></div><div class="step"><strong>公開状況を確認</strong><span>成功・失敗をダッシュボードで確認できます。</span></div></div></section>
+    <section class="panel"><h2>対応する用途</h2><div class="grid"><div class="card"><h3>作品公開</h3><p>ペン画・細密画の完成作品を、画像または短い動画として投稿します。</p></div><div class="card"><h3>制作記録</h3><p>制作過程やディテールを短尺動画にまとめ、公開日時を予約します。</p></div><div class="card"><h3>投稿の整理</h3><p>キャプション、ハッシュタグ、公開先、公開日時を投稿単位で管理します。</p></div></div></section>
+    <section class="panel"><h2>データと権限</h2><ul><li>取得するのは、接続・投稿・公開状態の確認に必要な最小限の情報です。</li><li>認証トークンと投稿データは、アクセスを制限したセルフホスト環境に保存します。</li><li>投稿は利用者本人が内容と公開日時を確認して予約します。自動で他人のアカウントへ投稿する機能はありません。</li><li>接続解除は各SNSまたはPostizの連携設定からいつでも実行できます。</li></ul></section>
+    <section class="panel"><h2>サポート・関連情報</h2><p class="support">本アプリは個人制作のための非公開運用です。お問い合わせやデータ削除の依頼は、公式リンクからGAI本人へご連絡ください。</p><div class="links"><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="https://lit.link/gaibako">公式リンク（お問い合わせ）</a><a href="https://www.artgene.net/gai/">作品一覧</a></div></section>
+  </main><footer class="wrap">© 2026 GAI｜Fine Line Artist</footer>
+</body></html>
